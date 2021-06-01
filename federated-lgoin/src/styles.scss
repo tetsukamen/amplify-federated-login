@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --amplify-primary-color: #fc7963;
+    --amplify-primary-tint: #59d0ff; // リンクホバー時の色
+    --amplify-primary-shade: #4e3ee0; // クリック時の色
+}
