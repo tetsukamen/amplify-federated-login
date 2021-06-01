@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "federatedlgoin809e2b1d": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
