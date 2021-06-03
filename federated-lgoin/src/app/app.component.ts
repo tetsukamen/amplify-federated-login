@@ -18,6 +18,7 @@ export class AppComponent implements OnInit, OnDestroy {
       { type: "username" },
       { type: "email" },
       { type: "password" },
+      { type: "custom:userType" },
     ];
 
     onAuthUIStateChange((authState, authData) => {
