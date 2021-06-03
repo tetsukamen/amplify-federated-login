@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "federatedlgoin",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authfederatedlgoin809e2b1d",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

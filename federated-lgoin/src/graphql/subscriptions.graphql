@@ -1,0 +1,34 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreatePicture {
+  onCreatePicture {
+    type
+    id
+    bucket
+    key
+    region
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdatePicture {
+  onUpdatePicture {
+    type
+    id
+    bucket
+    key
+    region
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeletePicture {
+  onDeletePicture {
+    type
+    id
+    bucket
+    key
+    region
+    createdAt
+    updatedAt
+  }
+}
