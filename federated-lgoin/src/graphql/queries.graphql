@@ -3,9 +3,9 @@ query GetPicture($id: ID!) {
   getPicture(id: $id) {
     type
     id
-    bucket
     key
-    region
+    level
+    author
     createdAt
     updatedAt
   }
@@ -19,9 +19,9 @@ query ListPictures(
     items {
       type
       id
-      bucket
       key
-      region
+      level
+      author
       createdAt
       updatedAt
     }

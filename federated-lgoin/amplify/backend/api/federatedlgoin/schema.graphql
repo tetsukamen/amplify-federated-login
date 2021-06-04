@@ -1,7 +1,7 @@
 type Picture @model {
   type: String! # always picture
   id: ID
-  bucket: String!
   key: String!
-  region: String!
+  level: String!
+  author: String! # username
 }

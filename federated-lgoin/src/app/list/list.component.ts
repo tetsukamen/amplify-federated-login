@@ -8,6 +8,7 @@ import { APIService, Picture } from '../API.service';
 })
 export class ListComponent implements OnInit {
   public pictures: Array<Picture>;
+  key: string = "waddy1622777749.jpeg";
 
   constructor(
     private api: APIService,

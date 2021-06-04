@@ -1,1 +1,4 @@
-<p>list works!</p>
+<div *ngFor="let pic of pictures">{{pic.key}}
+    <amplify-s3-image [attr.img-key]="pic.key" [attr.level]="pic.level">
+    </amplify-s3-image>
+</div>

@@ -12,16 +12,16 @@ export interface SubscriptionResponse<T> {
 export type CreatePictureInput = {
   type: string;
   id?: string | null;
-  bucket: string;
   key: string;
-  region: string;
+  level: string;
+  author: string;
 };
 
 export type ModelPictureConditionInput = {
   type?: ModelStringInput | null;
-  bucket?: ModelStringInput | null;
   key?: ModelStringInput | null;
-  region?: ModelStringInput | null;
+  level?: ModelStringInput | null;
+  author?: ModelStringInput | null;
   and?: Array<ModelPictureConditionInput | null> | null;
   or?: Array<ModelPictureConditionInput | null> | null;
   not?: ModelPictureConditionInput | null;
@@ -70,9 +70,9 @@ export type Picture = {
   __typename: "Picture";
   type: string;
   id?: string | null;
-  bucket: string;
   key: string;
-  region: string;
+  level: string;
+  author: string;
   createdAt: string;
   updatedAt: string;
 };
@@ -80,9 +80,9 @@ export type Picture = {
 export type UpdatePictureInput = {
   type?: string | null;
   id: string;
-  bucket?: string | null;
   key?: string | null;
-  region?: string | null;
+  level?: string | null;
+  author?: string | null;
 };
 
 export type DeletePictureInput = {
@@ -92,9 +92,9 @@ export type DeletePictureInput = {
 export type ModelPictureFilterInput = {
   type?: ModelStringInput | null;
   id?: ModelIDInput | null;
-  bucket?: ModelStringInput | null;
   key?: ModelStringInput | null;
-  region?: ModelStringInput | null;
+  level?: ModelStringInput | null;
+  author?: ModelStringInput | null;
   and?: Array<ModelPictureFilterInput | null> | null;
   or?: Array<ModelPictureFilterInput | null> | null;
   not?: ModelPictureFilterInput | null;
@@ -126,9 +126,9 @@ export type CreatePictureMutation = {
   __typename: "Picture";
   type: string;
   id?: string | null;
-  bucket: string;
   key: string;
-  region: string;
+  level: string;
+  author: string;
   createdAt: string;
   updatedAt: string;
 };
@@ -137,9 +137,9 @@ export type UpdatePictureMutation = {
   __typename: "Picture";
   type: string;
   id?: string | null;
-  bucket: string;
   key: string;
-  region: string;
+  level: string;
+  author: string;
   createdAt: string;
   updatedAt: string;
 };
@@ -148,9 +148,9 @@ export type DeletePictureMutation = {
   __typename: "Picture";
   type: string;
   id?: string | null;
-  bucket: string;
   key: string;
-  region: string;
+  level: string;
+  author: string;
   createdAt: string;
   updatedAt: string;
 };
@@ -159,9 +159,9 @@ export type GetPictureQuery = {
   __typename: "Picture";
   type: string;
   id?: string | null;
-  bucket: string;
   key: string;
-  region: string;
+  level: string;
+  author: string;
   createdAt: string;
   updatedAt: string;
 };
@@ -172,9 +172,9 @@ export type ListPicturesQuery = {
     __typename: "Picture";
     type: string;
     id?: string | null;
-    bucket: string;
     key: string;
-    region: string;
+    level: string;
+    author: string;
     createdAt: string;
     updatedAt: string;
   } | null> | null;
@@ -185,9 +185,9 @@ export type OnCreatePictureSubscription = {
   __typename: "Picture";
   type: string;
   id?: string | null;
-  bucket: string;
   key: string;
-  region: string;
+  level: string;
+  author: string;
   createdAt: string;
   updatedAt: string;
 };
@@ -196,9 +196,9 @@ export type OnUpdatePictureSubscription = {
   __typename: "Picture";
   type: string;
   id?: string | null;
-  bucket: string;
   key: string;
-  region: string;
+  level: string;
+  author: string;
   createdAt: string;
   updatedAt: string;
 };
@@ -207,9 +207,9 @@ export type OnDeletePictureSubscription = {
   __typename: "Picture";
   type: string;
   id?: string | null;
-  bucket: string;
   key: string;
-  region: string;
+  level: string;
+  author: string;
   createdAt: string;
   updatedAt: string;
 };
@@ -227,9 +227,9 @@ export class APIService {
           __typename
           type
           id
-          bucket
           key
-          region
+          level
+          author
           createdAt
           updatedAt
         }
@@ -254,9 +254,9 @@ export class APIService {
           __typename
           type
           id
-          bucket
           key
-          region
+          level
+          author
           createdAt
           updatedAt
         }
@@ -281,9 +281,9 @@ export class APIService {
           __typename
           type
           id
-          bucket
           key
-          region
+          level
+          author
           createdAt
           updatedAt
         }
@@ -305,9 +305,9 @@ export class APIService {
           __typename
           type
           id
-          bucket
           key
-          region
+          level
+          author
           createdAt
           updatedAt
         }
@@ -332,9 +332,9 @@ export class APIService {
             __typename
             type
             id
-            bucket
             key
-            region
+            level
+            author
             createdAt
             updatedAt
           }
@@ -365,9 +365,9 @@ export class APIService {
           __typename
           type
           id
-          bucket
           key
-          region
+          level
+          author
           createdAt
           updatedAt
         }
@@ -384,9 +384,9 @@ export class APIService {
           __typename
           type
           id
-          bucket
           key
-          region
+          level
+          author
           createdAt
           updatedAt
         }
@@ -403,9 +403,9 @@ export class APIService {
           __typename
           type
           id
-          bucket
           key
-          region
+          level
+          author
           createdAt
           updatedAt
         }

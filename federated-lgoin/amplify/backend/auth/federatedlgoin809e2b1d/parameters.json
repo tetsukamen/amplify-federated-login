@@ -1,6 +1,6 @@
 {
     "identityPoolName": "federatedlgoin809e2b1d_identitypool_809e2b1d",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "federa809e2b1d",
     "userPoolName": "federatedlgoin809e2b1d_userpool_809e2b1d",
     "autoVerifiedAttributes": [

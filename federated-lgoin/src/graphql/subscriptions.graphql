@@ -3,9 +3,9 @@ subscription OnCreatePicture {
   onCreatePicture {
     type
     id
-    bucket
     key
-    region
+    level
+    author
     createdAt
     updatedAt
   }
@@ -14,9 +14,9 @@ subscription OnUpdatePicture {
   onUpdatePicture {
     type
     id
-    bucket
     key
-    region
+    level
+    author
     createdAt
     updatedAt
   }
@@ -25,9 +25,9 @@ subscription OnDeletePicture {
   onDeletePicture {
     type
     id
-    bucket
     key
-    region
+    level
+    author
     createdAt
     updatedAt
   }

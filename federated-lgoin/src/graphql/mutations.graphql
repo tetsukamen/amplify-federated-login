@@ -6,9 +6,9 @@ mutation CreatePicture(
   createPicture(input: $input, condition: $condition) {
     type
     id
-    bucket
     key
-    region
+    level
+    author
     createdAt
     updatedAt
   }
@@ -20,9 +20,9 @@ mutation UpdatePicture(
   updatePicture(input: $input, condition: $condition) {
     type
     id
-    bucket
     key
-    region
+    level
+    author
     createdAt
     updatedAt
   }
@@ -34,9 +34,9 @@ mutation DeletePicture(
   deletePicture(input: $input, condition: $condition) {
     type
     id
-    bucket
     key
-    region
+    level
+    author
     createdAt
     updatedAt
   }

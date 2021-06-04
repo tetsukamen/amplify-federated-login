@@ -23,5 +23,11 @@
         }
       }
     }
+  },
+  "storage": {
+    "federatedLoginStorage": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }

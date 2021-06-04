@@ -1,15 +1,2 @@
-<form *ngIf="createForm" [formGroup]="createForm" (ngSubmit)="onCreate(createForm.value)">
-    <div>
-        <label>bucket:</label>
-        <input formControlName="bucket" type="text">
-    </div>
-    <div>
-        <label>key:</label>
-        <input formControlName="key" type="text">
-    </div>
-    <div>
-        <label>region:</label>
-        <input formControlName="region" type="text">
-    </div>
-    <button type="submit">送信</button>
-</form>
+<input type="file" accept="image/*" (change)="onImageSelected($event)">
+<button (click)="onCreate()">送信</button>
